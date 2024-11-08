@@ -38,6 +38,11 @@ jobs:
         env:
           EXPORT: 1
           UNOPTIMIZED: 1
+          NEXT_PUBLIC_GISCUS_REPO: DoCongSon/My-Blog-and-Portfolio
+          NEXT_PUBLIC_GISCUS_REPOSITORY_ID: R_kgDONMXhnw
+          NEXT_PUBLIC_GISCUS_CATEGORY: General
+          NEXT_PUBLIC_GISCUS_CATEGORY_ID: DIC_kwDONMXhn84CkGI9
+          BUTTONDOWN_API_KEY: 643b6b67-b0ea-4e65-8039-75dc47c76dc2
           BASE_PATH: ${{ steps.configurepages.outputs.base_path }}
       - uses: actions/upload-pages-artifact@v3
         with:
