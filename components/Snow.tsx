@@ -1,13 +1,18 @@
 'use client'
 
 import { useTheme } from 'next-themes'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Snowfall from 'react-snowfall'
-const image = document.createElement('img')
 
 const Snow = () => {
+  const [images, setImage] = useState<CanvasImageSource[]>()
   const { resolvedTheme } = useTheme()
-  image.src = `/static/images/snow-${resolvedTheme}.png`
+
+  useEffect(() => {
+    const img = document.createElement('img')
+    img.src = `/static/images/snow-${resolvedTheme}.png`
+    setImage([img])
+  }, [resolvedTheme])
 
   return (
     <Snowfall
@@ -19,7 +24,7 @@ const Snow = () => {
         height: '100vh',
         position: 'fixed',
       }}
-      images={[image]}
+      images={images}
     />
   )
 }
