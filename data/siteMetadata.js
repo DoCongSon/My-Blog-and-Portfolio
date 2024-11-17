@@ -1,10 +1,10 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: "Đỗ Công Sơn's Blog",
+  title: "Đỗ Công Sơn's portfolio and blog",
   author: 'Đỗ Công Sơn',
   headerTitle: 'DCS.Blog',
   description:
-    'Blog cá nhân của Đỗ Công Sơn, chia sẻ kiến thức về lập trình, công nghệ và cuộc sống.',
+    'Portfolio và blog cá nhân của Đỗ Công Sơn, chia sẻ kiến thức về lập trình, công nghệ và cuộc sống.',
   language: 'vi-VN',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
@@ -15,7 +15,6 @@ const siteMetadata = {
   email: 'docongson04@gmail.com',
   github: 'https://github.com/DoCongSon',
   x: 'https://twitter.com/x',
-  // twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
@@ -33,7 +32,7 @@ const siteMetadata = {
       // We use an env variable for this site to avoid other users cloning our analytics ID
       umamiWebsiteId: process.env.NEXT_UMAMI_ID, // e.g. 123e4567-e89b-12d3-a456-426614174000
       // You may also need to overwrite the script if you're storing data in the US - ex:
-      // src: 'https://us.umami.is/script.js'
+      // src: 'https://us.umami.is/script.js',
       // Remember to add 'us.umami.is' in `next.config.js` as a permitted domain for the CSP
     },
     // plausibleAnalytics: {
@@ -82,6 +81,7 @@ const siteMetadata = {
       themeURL: '',
       // This corresponds to the `data-lang="en"` in giscus's configurations
       lang: 'vi',
+      inputPosition: 'top',
     },
   },
   search: {

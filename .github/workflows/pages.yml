@@ -42,7 +42,7 @@ jobs:
           NEXT_PUBLIC_GISCUS_REPOSITORY_ID: R_kgDONMXhnw
           NEXT_PUBLIC_GISCUS_CATEGORY: General
           NEXT_PUBLIC_GISCUS_CATEGORY_ID: DIC_kwDONMXhn84CkGI9
-          BUTTONDOWN_API_KEY: 643b6b67-b0ea-4e65-8039-75dc47c76dc2
+          NEXT_UMAMI_ID: e9085442-9e71-41cc-aae8-b43964c0f1c1
           BASE_PATH: ${{ steps.configurepages.outputs.base_path }}
       - uses: actions/upload-pages-artifact@v3
         with:

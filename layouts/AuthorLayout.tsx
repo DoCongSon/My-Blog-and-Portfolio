@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 import type { Authors } from 'contentlayer/generated'
 import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
+import CareerTimeline from '@/components/CareerTimeline'
 
 interface Props {
   children: ReactNode
@@ -19,8 +20,8 @@ export default function AuthorLayout({ children, content }: Props) {
             About
           </h1>
         </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-          <div className="flex flex-col items-center space-x-2 pt-8">
+        <div className="items-start space-y-2 xl:grid xl:grid-cols-5 xl:gap-x-8 xl:space-y-0">
+          <div className="flex flex-col items-center space-x-2 pt-8 xl:col-span-2">
             {avatar && (
               <Image
                 src={avatar}
@@ -39,8 +40,12 @@ export default function AuthorLayout({ children, content }: Props) {
               <SocialIcon kind="linkedin" href={linkedin} />
               <SocialIcon kind="x" href={twitter} />
             </div>
+            <div className="prose mt-8">
+              <h3 className="text-gray-900 dark:text-white">Career Timeline</h3>
+              <CareerTimeline />
+            </div>
           </div>
-          <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
+          <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-3">
             {children}
           </div>
         </div>

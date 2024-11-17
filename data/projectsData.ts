@@ -7,20 +7,16 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'The Comic book website',
+    description: `A website that allows you to read comic books online. You can choose from a wide range of genres and authors.`,
+    imgSrc: '/static/images/projects/comic.png',
+    href: '/blog/the-time-machine',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'The E-commerce website',
+    description: `An e-commerce website that allows you to buy products online. You can choose from a wide range of products.`,
+    imgSrc: '/static/images/projects/e-commerce.png',
+    href: 'https://e-commerce-dcs.netlify.app',
   },
 ]
 

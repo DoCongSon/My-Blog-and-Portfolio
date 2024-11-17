@@ -60,10 +60,22 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        sans: ['var(--font-be-vietnam)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
+        primary: {
+          50: '#ebffff',
+          100: '#cefeff',
+          200: '#a2fbff',
+          300: '#63f6fd',
+          400: '#1ce6f4',
+          500: '#00ccdd',
+          600: '#03a0b7',
+          700: '#0a7f94',
+          800: '#126678',
+          900: '#145565',
+          950: '#063846',
+        },
         gray: colors.gray,
       },
       zIndex: {
