@@ -42,7 +42,12 @@ export default function Home({ posts }) {
               <Link href="/projects" className="hover:underline">
                 <span data-umami-event="home-link-projects">🛠️ What have I built?</span>
               </Link>
-              <Link href="/about" className="hover:underline">
+              <Link
+                href="/static/Đỗ Công Sơn's Resume.pdf"
+                className="hover:underline"
+                download
+                target="_blank"
+              >
                 <span data-umami-event="home-link-resume">📄 Download my resume</span>
               </Link>
             </div>

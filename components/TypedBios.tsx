@@ -22,7 +22,6 @@ const TypedBios = () => {
   return (
     <div>
       <ul id="bios" className="hidden">
-        <li></li>
         <li>
           I live in <b className="font-medium">Ha Noi, Viet Nam</b>.
         </li>
@@ -39,9 +38,9 @@ const TypedBios = () => {
         <li>
           I work mostly with <b className="font-medium">React.Js, Next.Js</b> framework.
         </li>
-        <li>I'm a dog 🐕 and a cat 🐈.</li>
-        <li>I love listening music.</li>
-        <li>I love playing video game, TFT is my favorite one.</li>
+        <li>I have a dog 🐕 and a cat 🐈.</li>
+        <li>I love listening music 🎶.</li>
+        <li>I love playing video game 🎮, TFT is my favorite one.</li>
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />
     </div>
