@@ -10,7 +10,7 @@ const projectsData: Project[] = [
     title: 'The Comic book website',
     description: `A website that allows you to read comic books online. You can choose from a wide range of genres and authors.`,
     imgSrc: '/static/images/projects/comic.png',
-    href: '/blog/the-time-machine',
+    href: 'https://supercomic.vercel.app/',
   },
   {
     title: 'The E-commerce website',

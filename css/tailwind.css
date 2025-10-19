@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-::-webkit-scrollbar {
-  @apply h-3 w-3;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-gradient-to-b from-purple-500 via-primary-500 to-rose-500;
-}
-
 ::-moz-selection {
   @apply bg-primary-200 text-primary-900;
 }

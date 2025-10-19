@@ -12,81 +12,103 @@ interface Career {
 
 const CareerData: Career[] = [
   {
-    org: 'Younet Media',
-    url: 'https://younetmedia.com',
-    logo: '/static/images/avatar.png',
-    start: 'Mar 2022',
+    org: 'Okhub Vietnam',
+    url: 'https://okhub.vn/',
+    logo: '/static/images/okhub.jpg',
+    start: 'May 2024',
     end: 'Present',
-    title: 'Junior Software Engineer',
-    icon: '👨‍💻',
-    event: 'career-younetmedia',
+    title: 'Frontend Developer',
+    icon: '💼',
+    event: 'career-okhub',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
           <li>
-            Build{' '}
-            <a href="https://ecomheat.youneteci.com" rel="noopener noreferrer" target="_blank">
-              Ecomheat
-            </a>{' '}
-            - a website helps to measure the performance of the industry and players on E-Commerce
-            platforms thru cross E-commerce channels.
+            Developed the user interface with a focus on smooth user experience and performance
+            optimization.
           </li>
+          <li>Participated in code reviews and provided valuable feedback</li>
+          <li>Collaborated with cross-functional teams to define and implement new features.</li>
+          <li>Maintained and improved existing codebase.</li>
+          <li>Fixed bugs and made adjustments based on customer feedback.</li>
+        </ul>
+      )
+    },
+  },
+  {
+    org: 'Freelancer',
+    url: '#',
+    logo: '/static/images/freelance.png',
+    start: 'Jan 2024',
+    end: 'May 2024',
+    title: 'Freelancer Developer',
+    icon: '🛠️',
+    event: 'career-freelancer',
+    details: () => {
+      return (
+        <ul className="[&>li]:my-2">
           <li>
-            Build <strong>AppCore</strong> - Developed and published core NestJS packages, including
-            DatabaseModule, CacheModule, RedisModule, ConfigModule and others on npm to accelerate
-            development and deployment across multiple projects.
+            Participated in code reviews and provided valuable feedback, leading to enhanced code
+            quality.
+          </li>
+          <li>Assisted in developing a comprehensive documentation system for the codebase</li>
+          <li>Collaborated with the UX/UI team to optimize the user interface.</li>
+          <li>Developed and implemented new features.</li>
+        </ul>
+      )
+    },
+  },
+  {
+    org: 'Samsung R&D Center Vietnam',
+    url: 'https://web.facebook.com/samsungvietnamrnd',
+    logo: '/static/images/srv.jpg',
+    start: 'Aug 2023',
+    end: 'Oct 2023',
+    title: 'Intern Mobile Developer',
+    icon: '📱',
+    event: 'career-samsung',
+    details: () => {
+      return (
+        <ul className="[&>li]:my-2 ">
+          <li>
+            Trained in data structures and algorithms, resulting in an increase in efficiency.
+          </li>
+          <li>Development of features for mini Android projects.</li>
+          <li>
+            Participated in Samsung Software Testing Certification Programming Contest and earned a
+            Certification.
           </li>
         </ul>
       )
     },
   },
   {
-    org: 'QKIT Software',
-    url: 'https://qkit.vn',
-    logo: '/static/images/avatar.png',
-    start: 'Jan 2021',
-    end: 'Dec 2022',
-    title: 'Fresher Backend Developer',
-    icon: '👨‍💻',
-    event: 'career-qkit',
-    details: () => {
-      return (
-        <ul className="[&>li]:my-2 [&>strong]:text-gray-700 [&>strong]:dark:text-gray-100">
-          <li>
-            📍<strong>Developed and maintained web applications</strong> for managing company
-            website content, including blogs, clients, and recruitment.
-          </li>
-          <li>
-            📍Implemented backend solutions using <strong> NestJS, PostgreSQL, and Prisma</strong>.
-          </li>
-          <li>
-            📍<strong>Participated in Agile methodologies </strong> to boost project efficiency and
-            completion rates.
-          </li>
-        </ul>
-      )
-    },
-  },
-  {
-    org: 'University of Information Technology',
-    url: 'https://en.uit.edu.vn',
-    logo: '/static/images/avatar.png',
-    start: 'Aug 2019',
-    end: 'Jun 2023',
-    title: 'Student ad UIT',
-    icon: '👨‍💻',
-    event: 'career-qkit',
+    org: 'Academy of Cryptography Techniques',
+    url: 'https://actvn.edu.vn/',
+    logo: '/static/images/kma.png',
+    start: 'Sep 2019',
+    end: 'May 2024',
+    title: 'Student of KMA',
+    icon: '🎓',
+    event: 'career-kma',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
           <li>
-            Get a good degree at <strong>School of Computer Science</strong>
+            Graduated with a Good degree in{' '}
+            <strong className="dark:text-white">
+              Electronics and Telecommunications Engineering.
+            </strong>
           </li>
           <li>
-            While most of my friends pursued careers in <strong> Data or AI Engineering </strong>, I
+            GPA: <strong className="dark:text-white">3.04/4.0</strong>
+          </li>
+          <li>
+            While most of my friends pursued careers in{' '}
+            <strong className="dark:text-white"> Electronics and Telecommunications </strong>, I
             found my passion in {''}
-            <strong>Software Engineering</strong> , particularly in web and app development. This
-            decision has shaped who I am today.
+            <strong className="dark:text-white">Software Engineering</strong> , particularly in web
+            development. This decision has shaped who I am today.
           </li>
         </ul>
       )
