@@ -216,7 +216,7 @@ Edit the layout in `app` or content in `data`. With live reloading, the pages au
 
 `data/blog` - replace with your own blog posts.
 
-`public/static` - store assets such as images and favicons.
+`public/static` - store assets such as images.
 
 `tailwind.config.js` and `css/tailwind.css` - tailwind configuration and stylesheet which can be modified to change the overall look and feel of the site.
 

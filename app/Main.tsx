@@ -1,6 +1,5 @@
 import Avatar from '@/components/Avatar'
 import Link from '@/components/Link'
-import Snow from '@/components/Snow'
 import Tag from '@/components/Tag'
 import TypedBios from '@/components/TypedBios'
 import siteMetadata from '@/data/siteMetadata'
@@ -11,8 +10,6 @@ const MAX_DISPLAY = 5
 export default function Home({ posts }) {
   return (
     <div className="relative">
-      {/* snowfall */}
-      <Snow />
       {/* Introduce myself */}
       <div className="mt-8 dark:divide-gray-700 md:mt-8">
         <div className="bg-gradient-to-r from-gray-500 to-slate-400 bg-clip-text text-4xl font-extrabold leading-[60px] tracking-tight text-transparent dark:bg-gradient-to-l dark:from-blue-800 dark:to-primary-600 md:text-7xl md:leading-[86px]">

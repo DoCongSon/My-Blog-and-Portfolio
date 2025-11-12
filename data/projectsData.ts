@@ -1,3 +1,5 @@
+import { Blog } from 'contentlayer.config'
+
 interface Project {
   title: string
   description: string
@@ -7,16 +9,11 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'The Comic book website',
-    description: `A website that allows you to read comic books online. You can choose from a wide range of genres and authors.`,
-    imgSrc: '/static/images/projects/comic.png',
-    href: 'https://supercomic.vercel.app/',
-  },
-  {
-    title: 'The E-commerce website',
-    description: `An e-commerce website that allows you to buy products online. You can choose from a wide range of products.`,
-    imgSrc: '/static/images/projects/e-commerce.png',
-    href: 'https://e-commerce-dcs.netlify.app',
+    title: 'Portfolio & Blog cá nhân của tôi',
+    description:
+      'Khám phá kiến trúc và các tính năng nổi bật của blog cá nhân và portfolio được xây dựng bằng Next.js, Contentlayer, MDX, và nhiều công nghệ hiện đại khác.',
+    href: '/blog/projects/gioi-thieu-my-blog-portfolio',
+    imgSrc: '/static/images/twitter-card.png',
   },
 ]
 

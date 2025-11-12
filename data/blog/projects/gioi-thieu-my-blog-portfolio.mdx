@@ -1,0 +1,49 @@
+---
+title: 'Giới thiệu dự án: Portfolio & Blog cá nhân của Đỗ Công Sơn'
+date: '2025-11-12'
+tags: ['next-js', 'tailwind', 'contentlayer', 'portfolio', 'blog']
+draft: false
+summary: 'Toàn cảnh kiến trúc, tính năng và cách vận hành dự án blog/portfolio: Next.js App Router, Tailwind CSS, Contentlayer (MDX), SEO (sitemap/RSS), tìm kiếm kbar, bình luận Giscus, analytics Umami, CSP security headers và tuỳ biến giao diện.'
+images: ['/static/images/twitter-card.png']
+authors: ['default']
+layout: PostBanner
+---
+
+> Đây là bài viết giới thiệu tổng quan về việc lên ý tưởng, cách mình xây dựng và vận hành website cá nhân (portfolio + blog): từ công nghệ, luồng nội dung cho tới SEO.
+
+## Ý tưởng
+
+- Dự án được xây dựng với mục tiêu tạo ra một blog cá nhân hiện đại, có hiệu năng cao, khả năng mở rộng tốt và tối ưu cho SEO.
+- Không chỉ là nơi đăng bài viết, blog còn đóng vai trò như một nền tảng cá nhân — giới thiệu dự án, chia sẻ kiến thức, và thể hiện phong cách viết lẫn kỹ năng lập trình.
+- Blog được xây dựng lại từ cấu trúc của dự án gốc [tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) của Tim Lrx
+
+## Kiến trúc & công nghệ
+
+- Next.js App Router (v15) + React + TypeScript
+- Tailwind CSS cho style, tối ưu tốc độ phát triển giao diện
+- Contentlayer (MDX) để quản lý nội dung: hỗ trợ frontmatter, code highlight, KaTeX, citation
+- Pliny tích hợp: search (kbar), comments (Giscus)
+- Umami Analytics theo dõi truy cập
+- Bảo mật: Security Headers + CSP trong `next.config.js`
+
+Các Page chính:
+
+- **Trang chủ** – Giới thiệu cơ bản về bản thân, các bài viết gần nhất
+- **blogs** – Danh sách các bài viết của tôi
+- **tags** - Danh sách các tag phân loại
+- **project** – Nơi chứa các dự án tôi đã làm
+- **about** – Chi tiết về tôi
+
+## Tính năng nổi bật
+
+- 3 layout bài viết: PostLayout (chuẩn), PostSimple (gọn), PostBanner (có banner ảnh)
+- Listing có sidebar tags, phân trang, hiển thị ngày & tags
+- MDX mạnh mẽ: code highlight (Prism), TOC, KaTeX, citation, Github alerts
+- SEO: metadata đầy đủ, sitemap, robots, RSS (toàn site & theo tag)
+- Tìm kiếm: kbar (local index)
+- Bình luận: Giscus
+- Theme: Light/Dark/System với `next-themes`
+
+## Kết luận
+
+Với kiến trúc hiện đại, khả năng mở rộng cao, và tích hợp đầy đủ từ viết, tìm kiếm, đến phân tích và bảo mật — dự án này là nền tảng hoàn hảo để tôi có thể xây dựng thương hiệu cá nhân, chia sẻ kiến thức một cách chuyên nghiệp và mở rộng hệ sinh thái nội dung của riêng mình
